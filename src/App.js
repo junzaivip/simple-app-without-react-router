@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About.js';
 import Contact from './pages/Contact.js';
 
+import Demo from './pages/Demo.js';
 
 import {HashRouter as Router, Route} from "react-router-dom";
 
@@ -45,7 +46,6 @@ class App extends Component {
     //  return  (
     //      this.state.val === nextState.val ? false : true
     //  )
-    //
     // }
 
 
@@ -56,6 +56,7 @@ class App extends Component {
                 <div>
                     <Navbar/>
                     <Temp val={this.state.val}></Temp>
+                    <Demo></Demo>
                     <Jumbotron title="About Me!" subtitle={this.state.val}/>
                     <Route path="/" exact component={Home}></Route>
                     <Route path="/about/:id" component={About}></Route>
