@@ -11,4 +11,8 @@ exact 路由不会包含首页内容
 BrowserRouter: 此路由方式中没有#
 HashRouter：此路由方式中有#
 
+按钮跳转方法：
+this.props.history.push('/');
+
+
 

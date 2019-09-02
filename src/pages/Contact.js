@@ -4,9 +4,8 @@ class About extends Component {
 
 
     onGoHome(){
-        console.log(this.props)
+        this.props.history.push('/');
     }
-
 
   render() {
     return (
